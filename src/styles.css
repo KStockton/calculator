@@ -5,7 +5,12 @@
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  background: linear-gradient(to right, blue, red);
+}
+
+.calculator-root {
+  display: flex;
+  justify-content: center;
 }
 
 .calculator-grid {
@@ -27,10 +32,6 @@ body {
   background-color: rgba(225, 225, 225, 0.9);
 }
 
-.calculator-grid > button:active {
-  background-color: 'yellow';
-}
-
 .span-two {
   grid-column: span 2;
 }
@@ -42,6 +43,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+  padding-right: 1rem;
 }
 
 .output .previous-operand {
