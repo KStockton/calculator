@@ -152,8 +152,8 @@ export default function App() {
 
   return (
     <div className="calculator-root">
-      <h1>React Calculator</h1>
-      <p>A simple calculator built with React</p>
+      <h1>Calculator</h1>
+      <p>A simple calculator built with React by Mike KS</p>
       <div className="calculator-grid">
         <div className="output">
           <div className="previous-operand">
