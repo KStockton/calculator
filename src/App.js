@@ -153,13 +153,19 @@ export default function App() {
   return (
     <div className="calculator-root">
       <h1>Calculator</h1>
-      <p>A simple calculator built with React by Mike KS</p>
       <div className="calculator-grid">
+        <div className="circle-container">
+          <div class="circle red"></div>
+          <div class="circle orange"></div>
+          <div class="circle green"></div>
+        </div>
         <div className="output">
           <div className="previous-operand">
             {formatOperand(previousOperand)} {operation}
           </div>
-          <div className="current-operand">{formatOperand(currentOperand)}</div>
+            <div className="current-operand">
+              {formatOperand(currentOperand)}
+            </div>
         </div>
         <button
           className="span-two"
@@ -186,7 +192,7 @@ export default function App() {
         <DigitButton digit={"."} dispatch={dispatch} />
         <DigitButton digit={"0"} dispatch={dispatch} />
         <button
-          className="span-two"
+          className="span-two equal-sign"
           onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
         >
           {" "}
